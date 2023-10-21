@@ -1,0 +1,46 @@
+html{
+	background: linear-gradient(#9A5044, #E8D9A9,#E64535  ) fixed;
+}
+.hed{
+	background-color: black;
+	height: 60px;
+	width: 100%;
+	border-radius: 15px;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    list-style: none;
+}
+.menu li {
+    display: inline-block;
+    padding: 18px;
+    margin-right: 54px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size:  20px;
+}
+.menu a:hover{
+	color: #red;
+}
+.prob{
+
+	height: 20px;
+}
+h1{
+	font-size: 40px;
+}
+table{
+	display: flex;
+    justify-content: center;
+}
+.td{
+	top: 20px
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио преподавателя</title>
+    <link rel="stylesheet" href="css.css">
+    <script>
+        let tummu = {
+			surname: 'Михеева',
+			name: 'Татьяна',
+			patronymic: 'Александрова',
+			ocupation: 'Преподаватель специальных дисциплин',
+			degree: 'Высшее',
+			education: 'Московский государственный институт электронной техники (технический университет)',
+            qualification:'Инженер-программист инфокоммуникационных систем',
+            specialty:'Программное обеспечение радиоэлектронных систем',
+            discipline:['Основы алгоритмизации и программирования', 'Компьютерная графика'],
+            category: prompt('Категория :' ),
+            experience: prompt('Стаж:'),
+            email: prompt('E-mail:'),
+            site: prompt('Персональный сайт:')
+        }
+    </script> 
+</head>
+<body>
+    <header class="hed">
+        <div class="diiii">
+            <nav class="menu">
+                <ul >
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Курсы</a></li>
+                    <li><a href="#">Преподаватели</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="prob"></div>
+     <table >
+            <tr>
+                 <td class="td">
+                        <img src="no-image.jpg" alt="Profile" width="450">
+                    </td>
+                    <td>
+                        <section class="rer">
+                            <script>
+                                let conclusion = `
+                                    <h1> ${tummu.surname} <br> ${tummu.name} ${tummu.patronymic} </h1>
+                                    <p><h2> ${tummu.ocupation} </h2></p>
+                                    <hr>
+                                    <p><h3>Основная информация:</h3>
+                                        <ul>
+                                            <li><b>Уровень образования: ${tummu.degree}</b></li>
+                                            <li><b>Образование: ${tummu.education}</b></li>
+                                            <li><b>Квалификация: ${tummu.qualification}</b></li>
+                                            <li><b>Специализация: ${tummu.specialty}</b></li>
+                                            <li><b>Преподаваемые дисциплины:</b></li>
+                                            <ul class= "ul">
+                                                <li><b>${tummu.discipline[0]}</b></li>
+                                                <li><b>${tummu.discipline[1]}</b></li>
+                                            </ul>
+                                        </ul>
+                                    </p>
+                                    <p><h3>Дополнительная информация:</h3>
+                                        <ul>
+                                            <li><b>Категория: ${tummu.category}</b></li>
+                                            <li><b>Стаж: ${tummu.experience}</b></li>
+                                            <li><b>E-mail: ${tummu.email}</b></li>
+                                            <li><b>Персональный сайт: ${tummu.site}</b></li>
+                                        </ul>
+                                    </p>
+                                `;
+                                document.write(conclusion);
+                            </script>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+        </body>
+        </html>
